@@ -16,7 +16,7 @@ describe('Component', () => {
     vuetify,
   });;
 
-  it('Then props should be returned for a v-text-field Vue instance', async () => {
+  it('should emit clicked event after click', async () => {
     wrapper.find(".v-text-field").trigger('click')
 
     expect(wrapper.emitted('clicked')).toBeTruthy();
