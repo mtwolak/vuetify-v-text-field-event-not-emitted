@@ -17,8 +17,9 @@ describe('Component', () => {
   });;
 
   it('should emit clicked event after click', async () => {
-    wrapper.find(".v-text-field").trigger('click')
+      console.log(wrapper.html())
+    wrapper.find("#input-2").trigger('click')
 
-    expect(wrapper.emitted('clicked')).toBeTruthy();
+    expect(wrapper.emitted('changed')).toBeTruthy();
   });
 });
